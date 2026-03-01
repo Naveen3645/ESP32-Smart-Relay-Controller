@@ -54,20 +54,22 @@ Each relay is driven through a ULN2003 transistor array, making the board capabl
 
 ---
 
-## 📁 Folder Structure
+## 📁 Project Structure
+
+```
 ESP32-Smart-Relay-Controller/
 ├── Schematic/
-│ └── SmartRelay.SchDoc
+│   └── SmartRelay.SchDoc
 ├── PCB/
-│ └── SmartRelay.PcbDoc
+│   └── SmartRelay.PcbDoc
 ├── Output/
-│ └── Gerber/
+│   └── Gerber/
 ├── Images/
-│ ├── PCB_Top.png
-│ ├── PCB_Bottom.png
-│ └── 3D_View.png
+│   ├── PCB_Top.png
+│   ├── PCB_Bottom.png
+│   └── 3D_View.png
 └── README.md
-
+```
 ---
 
 ## 🖼️ PCB Preview
