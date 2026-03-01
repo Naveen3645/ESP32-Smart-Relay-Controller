@@ -1,91 +1,92 @@
-# ESP32-Smart-Relay-Controller
-WiFi based multi-channel AC load controller using ESP32 and ULN2003
-🚀 ESP32 Based Smart Relay Controller
-📌 Project Overview
+# 🚀 ESP32 Smart Relay Controller
 
-This project is a WiFi-enabled multi-channel AC load controller designed using Altium Designer.
-It allows switching of multiple AC appliances using an ESP32 microcontroller, relay drivers, and electromechanical relays.
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) 
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/repo-name?style=social)](https://github.com/yourusername/repo-name)
 
-The system can be controlled:
+> WiFi-enabled, multi-channel AC load controller designed using Altium Designer and ESP32.
 
-📶 Via WiFi (ESP32)
+---
 
-🔘 Via external manual switches
+## 📌 Overview
 
-🧠 System Architecture
+This project implements a **smart relay controller PCB** that can switch multiple AC loads using an **ESP32 microcontroller**.  
+The controller supports:
 
-ESP32 → ULN2003 Driver → Relay → AC Load
+- **WiFi-enabled control**
+- **Manual switch inputs**
+- **Relay isolation**
+- Designed with AC/DC separation for safety
 
-The ESP32 controls relay channels through a ULN2003 Darlington transistor array, which safely drives the relay coils to switch high-voltage AC loads.
+It’s ideal for smart homes, IoT automation, and AC load switching applications.
 
-⚙️ Hardware Components Used
+---
 
-ESP32 (WiFi Microcontroller)
+## 🧠 System Architecture
 
-ULN2003 Relay Driver IC
+Each relay is driven through a ULN2003 transistor array, making the board capable of handling mains AC loads while protecting the ESP32 logic.
 
-5V Electromechanical Relays
+---
 
-AC-DC Power Supply Module
+## 🛠️ Features
 
-Voltage Regulator (5V / 3.3V)
+✔ Multi-channel AC load control  
+✔ WiFi control via ESP32  
+✔ Manual switch inputs supported  
+✔ Electrical isolation with relays  
+✔ Separate layout for AC and low-voltage DC  
+✔ Wide PCB traces for load current  
+✔ Designed with proper clearance
 
-Pull-up Resistors
+---
 
-Screw Terminal Connectors
+## 📦 Hardware Components
 
-Programming Header
+| Component     | Description                         |
+|---------------|-------------------------------------|
+| ESP32         | Main controller (WiFi + GPIO)       |
+| ULN2003       | Relay driver IC                     |
+| 5V Relays     | Switch high-voltage AC loads        |
+| AC-DC Module  | Converts mains to DC                |
+| Voltage Regs  | 5V / 3.3V supply for logic          |
+| Pull-up Resistors | For stable switch inputs         |
+| Terminal Blocks | AC input/output connections       |
+| Programming Header | For firmware programming       |
 
-Mounting Holes
+---
 
-🔌 Features
+## 📁 Folder Structure
+ESP32-Smart-Relay-Controller/
+├── Schematic/
+│ └── SmartRelay.SchDoc
+├── PCB/
+│ └── SmartRelay.PcbDoc
+├── Output/
+│ └── Gerber/
+├── Images/
+│ ├── PCB_Top.png
+│ ├── PCB_Bottom.png
+│ └── 3D_View.png
+└── README.md
 
-✅ Multi-channel AC load control
+---
 
-✅ WiFi-enabled automation capability
+## 🖼️ PCB Preview
 
-✅ Manual switch input support
+> Add your PCB images here
 
-✅ Electrical isolation using relays
+![PCB Top](./Images/PCB_Top.png)  
+![PCB Bottom](./Images/PCB_Bottom.png)  
+![3D View](./Images/3D_View.png)
 
-✅ Dedicated relay driver stage
+---
 
-✅ Separate AC and DC sections in PCB layout
+## ⚡ Applications
 
-✅ Designed with proper clearance for high-voltage safety
+✔ Smart Home Automation  
+✔ Remote Lighting Control  
+✔ Industrial Load Switching  
+✔ IoT Appliance Management
 
-🛠️ PCB Design Details
+---
 
-Designed using Altium Designer
 
-2-layer PCB
-
-Separate AC and low-voltage DC routing
-
-Wide traces for AC load current
-
-Decoupling capacitors near ESP32
-
-Proper ground routing for noise reduction
-
-📂 Project Files Included
-
-📄 Schematic File (.SchDoc)
-
-🟫 PCB Layout File (.PcbDoc)
-
-📦 Project File (.PrjPcb)
-
-🏭 Manufacturing Output (Gerber Files)
-
-📷 PCB Top & Bottom Images
-
-⚡ Applications
-
-Smart home automation
-
-Remote lighting control
-
-Industrial load switching
-
-IoT-based appliance control
