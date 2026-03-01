@@ -74,9 +74,9 @@ ESP32-Smart-Relay-Controller/
 
 ## 🖼️ PCB Preview
 
-![PCB Top](3D_bottom_view.png)  
-![PCB Bottom](./Images/PCB_Bottom.png)  
-![3D View](./Images/3D_View.png)
+![PCB Top](top_view.png)  
+![PCB Bottom](bottom_view.png)  
+![3D View](3D_topview.png)
 
 ---
 
